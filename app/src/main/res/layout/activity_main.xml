@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.justin.guessinggame.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="107dp"
+        android:text="@string/prompt"
+        android:textSize="16pt"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <TextView
+        android:id="@+id/textViewResponse"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:text="@string/response"
+        android:textSize="12pt"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="248dp"
+        android:layout_weight="0.01" />
+
+    <EditText
+        android:id="@+id/editTextGuess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:ems="20"
+        android:textSize="36pt"
+        android:textAlignment="center"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnGuess"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="0.02"
+        android:onClick="btnClick"
+        android:textSize="20pt"
+        android:text="@string/btn_text" />
+
+</android.support.v7.widget.FitWindowsLinearLayout>
